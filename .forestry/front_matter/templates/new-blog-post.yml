@@ -1,4 +1,21 @@
 ---
 label: new blog post
 hide_body: true
-fields: []
+fields:
+- name: this_is_table
+  type: field_group_list
+  fields:
+  - name: this_is_text_area
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: this is text area
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: this is table
